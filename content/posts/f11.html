@@ -1,0 +1,1104 @@
+{
+   "type": "post",
+   "date": "2018-09-12T15:20:15+09:00",
+   "description": "never forget",
+   "slug": "lost-friends-911-spec",
+   "tags": [],
+   "title": "Friends #333"
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>A Screenplay</title>
+<meta name="generator" content="Textplay">
+<style type="text/css" media="all">
+
+/* ---------- PAGE STYLES ---------- */
+
+/* all page margins are maximums */
+@page {
+size: 8.5in 11in;
+margin-top:1in;
+margin-right:1in;
+margin-bottom:.5in;
+margin-left:1.5in;
+}
+/* This makes the page-counter start on the first page of the screenplay */
+div#screenplay {
+counter-reset: page 1;
+page: Screenplay;
+prince-page-group: start;
+}
+@page Screenplay {
+/* Page Numbers */
+@top-right-corner {
+font: 12pt "Courier Prime", courier, monospace;
+content: counter(page)".";
+vertical-align: bottom;
+padding-bottom: 1em;
+}
+/* Define Header */
+@top-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align: bottom;
+padding-bottom: 1.3em;
+}
+/* Define Footer */
+@bottom-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align:top;
+padding-top:0;
+}
+}
+/* removes the header and page-numbers from the first page */
+@page Screenplay:first {
+@top-right-corner { content: normal; }
+@top-left { content: normal; }
+}
+/* These control where page-breaks can and cannot happen */
+p {
+orphans: 2;
+widows: 2;
+}
+dl {
+page-break-inside:avoid;
+}
+dt, h2, h5 {
+page-break-after: avoid;
+}
+dd.parenthetical {
+orphans: 3;
+widows: 3;
+page-break-before: avoid;
+page-break-after: avoid;
+}
+dd {
+page-break-before:avoid;
+}
+div.page-break {
+page-break-after:always;
+}
+h3 {
+page-break-before: avoid;
+}
+/* by default Prince bookmarks all headings, no thanks */
+h3, h4, h5, h6 {
+prince-bookmark-level: none;
+}
+
+/* ---------- COMMON LAYOUT ---------- */
+
+:lang(jp) {
+font-family: osaka;
+}
+
+body {
+font-family: "Courier Prime", courier, monospace;
+font-size: 12pt;
+line-height: 1;
+}
+#screenplay {
+width: 6in;
+margin:0 auto;
+}
+p.center {
+text-align:center;
+margin-left:0;
+width:100%;
+}
+p {
+margin-top:12pt;
+margin-bottom:12pt;
+margin-left:0;
+padding-right:.25in;
+width:6in;
+white-space: pre-wrap;
+}
+
+/*Character Names*/
+
+dt {
+font-weight:normal;
+margin-top:1em;
+margin-left:2in;
+padding-right:.25in;
+width:4in;
+}
+
+/*Parentheticals*/
+
+dd.parenthetical {
+margin-left:1.6in;
+text-indent:-.12in;
+width: 2in;
+padding-right:2.66in;
+}
+
+/*Dialogue*/
+
+dd {
+margin:0;
+margin-left: 1in;
+width: 3.5in;
+padding-right:1.75in;
+line-height: inherit;
+white-space: pre-wrap;
+}
+
+/* Dual-Dialogue-blocks */
+
+div.dialogue_wrapper {
+overflow:auto;
+width:100%;
+}
+
+dl.dual {
+width:2.9in;
+}
+
+dl.dual dt, dl.dual dd {
+margin-left:0;
+width:2.5in;
+padding-right:.25in;
+}
+
+dl.dual.first {
+float:left;
+margin-top:-12pt;
+}
+
+dl.dual.second {
+margin-right:0;
+margin-left:auto;
+}
+
+dl.dual dt {
+text-align:center;
+}
+
+dl.dual dd.parenthetical {
+width:2.1in;
+margin-left:.32in;
+}
+
+/* Lyrics */
+span.lyric {
+font-style: italic;
+}
+
+span.lyric i {
+font-style: normal;
+}
+
+
+/* Sluglines and Transitions */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+font-size: 12pt;
+margin-top: 1em;
+margin-bottom: 1em;
+padding-right:.25in;
+text-transform:uppercase;
+}
+
+/* Full Sluglines */
+
+h2 {
+width: inherit;
+margin-top: 1em;
+margin-bottom: 12pt;
+margin-left: 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Right Transitions */
+
+h3 {
+margin-left: 4in;
+width: 2in;
+}
+
+/* Left Transitions */
+
+h4 {
+
+}
+
+/* Goldman Sluglines */
+
+h5 {
+margin-top: 1em;
+font-weight: bold;
+text-decoration: none;
+}
+
+span.underline {
+text-decoration:underline;
+}
+.comment {
+display:none
+}
+
+.revised { background:rgba(255, 255, 0, 0.2); }
+
+</style>
+</head>
+<body>
+
+<div id="screenplay">
+
+<p class="comment">COLD OPEN</p>
+
+<h2 class="full-slugline">INT. MONICA'S APARTMENT - DAY</h2>
+
+<p class="action">Joey is assembling a very modest house of cards, television playing behind him. Enter Monica and Chandler, removing light jackets.</p>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Hey, Joe.</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Check it out!</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">What's this?</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Duh - it's a flimsy metaphor for the delicate global politic.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER (TO MONICA)</dt>
+<dd class="dialogue">Did we go to the wrong apartment?</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Ok, i heard that on TV.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Still, Joey, that's great! I didn't know you had any hobbies - let alone a house of cards.</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Ooooooh - I get that expression now! No, actually I’m just up for a role as an architect.</dd>
+</dl>
+
+<p class="action">Joey stares ahead as though his statement needs no explanation.</p>
+
+<dl>
+<dt class="character">CHANDLER (TO MONICA)</dt>
+<dd class="dialogue">Were we supposed to finish that sentence for him or something?</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Joey, have you seen Phoebes? I need to talk to her.</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Yeah, she's right over &#8209;&#8209; oh, you know what? Yesterday she was right over there.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Told ya you should have asked yesterday.</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Ok, sure. But if I see her it'll be here - I'm going to build an addition.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Ah. Real estate never sleeps. Wait, I thought you had an <i>aud</i>-ition today.</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">That was canceled.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Your audition was canceled? Why?</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Yeah, Estelle called and said they gave the part to Anthony Hopkins and don't bother coming in.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">You were up for the same part as Anthony Hopkins?!</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">Yeah, but get this:</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY (CONT'D)</dt>
+<dd class="dialogue">He's supposedly more ~scholarly~ than I am!</dd>
+</dl>
+
+<p class="action">Joey waves arms in frustration. The gesture knocks over the card house.</p>
+
+<dl>
+<dt class="character">JOEY (CONT'D)</dt>
+<dd class="dialogue">Aw dammit!</dd>
+</dl>
+
+<p class="action">Joey slams his fist on remains of card house, destroying what remained.</p>
+
+<dl>
+<dt class="character">CHANDLER (TO MONICA)</dt>
+<dd class="dialogue">How different would that movie have been?</dd>
+</dl>
+
+<h5 class="goldman-slugline">TITLE SEQ</h5>
+<p class="action">So no-one told you life was gonna be this way...clap-clap-clap-clap...Your job's a joke, you're broke...</p>
+<p class="comment">ACT I</p>
+
+<h5 class="goldman-slugline">INTERIOR - CENTRAL PERK - DAY</h5>
+
+<p class="action">Rachel enters. She looks around, sees only Gunther.</p>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Hey Gunther. Have you seen Phoebe?</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">Tall blonde one, right? With the guitar?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Gunther! What made you want to be funny today?</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">Rachel, I haven't seen her in probably three years.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">What are you talking about? We're in here all the time together.</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">I sold this place years ago, Rachel. Did you not notice I'm never here?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Oh (clears throat) well of course I noticed that. Wait, you <i>owned</i> this place?!</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">I haven't seen <i>you</i> in three years, either.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="parenthetical">(jokingly punching Gunther's arm)</dd>
+<dd class="dialogue">How ya been, pal?</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">Well, it hasn't been the easiest transit&#8209;&#8209;</dd>
+</dl>
+
+<p class="action">Ross enters.</p>
+
+<dl>
+<dt class="character">ROSS (MOPILY)</dt>
+<dd class="dialogue">Hi.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Ooh, Ross. Have you seen Phoebe? I need to talk to her.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">No I haven't, sorry. About what?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">I guess I can tell you.</dd>
+</dl>
+
+<p class="action">Rachel pulls Ross away from Gunther, who is noticeably miffed and resumes what he was doing.</p>
+
+<dl>
+<dt class="character">RACHEL (CONT'D)</dt>
+<dd class="dialogue">I think Mike might be cheating on her.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">What?! Mike? No way.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Yeah, well i saw him with a brunette woman and he had his (clears throat, moves in for a secret) hand on her ass.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">What? No! Wait, a 'brunette woman'?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Well I only saw her from behind. But that's where her ass is and his hand was <i>on it</i> - just walking down the street that way.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS (SHAKEN)</dt>
+<dd class="dialogue">This is unbelievable. That Mike would do that. Also: that anyone would walk down the street that way. There must be some explanation.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">I hope so, too. But that's why I need to find Phoebe.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Well did you ask Gunther? If she's been around at all today he would have seen her.</dd>
+</dl>
+
+<p class="action">Rachel tries to interrupt Ross but fails.</p>
+
+<dl>
+<dt class="character">ROSS (CONT'D)</dt>
+<dd class="dialogue">Gunther, has Phoebe been around at all today?</dd>
+</dl>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">I don't know - I don't work here.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Right, right, I know - you <i>own it.</i> But you would have seen her if she was here, right?</dd>
+</dl>
+
+<p class="action">Gunther exits wordlessly. Ross shrugs to Rachel.</p>
+
+<h5 class="goldman-slugline">GUITAR WIPE TO:</h5>
+<p class="action">EXT. CENTRAL PERK - DAY</p>
+
+<p class="action">Monica and Chandler are blocked from entry by Gunther storming out.</p>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Taking the day off, eh?</dd>
+</dl>
+
+<p class="action">Gunther stops only to scowl at both directly, continues.</p>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Jeesh.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Do you think he's angry that we don't spend as much time here anymore?</dd>
+</dl>
+
+<p class="action">Monica shrugs, they enter the shop to find Ross and Rachel.</p>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Rachel! Ross! Oh my god! We haven't been here forever and look who we find.</dd>
+</dl>
+
+<p class="action">They all greet each other.</p>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">This is so great, you guys. Ross and I were just in the neighborhood looking for Phoebe.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">That's so funny - I'm looking for her, too. I hope she's alright.</dd>
+</dl>
+
+<p class="action">Enter Joey from the back of the restrooms.</p>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Oh - maybe Joe knows.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Oh my god - Joey!</dd>
+</dl>
+
+<p class="action">raucous greetings</p>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Wait, he wasn't here with you guys?</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY</dt>
+<dd class="dialogue">I didn't know any of you were here. I got locked out of my bathroom.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Joey, how did you get locked out of your own bathroom?</dd>
+</dl>
+
+<dl>
+<dt class="character">JOEY (SHRUGGING)</dt>
+<dd class="dialogue">Ducks. Hey - did you see Gunther? I haven't seen him in years. The guy looks great. Golder than ever! How are you guys?</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS (SENSING SOMETHING)</dt>
+<dd class="dialogue">Wait, I feel strange.</dd>
+</dl>
+
+<p class="action">Janice enters, accompanied by two small children.</p>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">Oh. My. God.</dd>
+</dl>
+
+<p class="action">braying laughter</p>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Ross, you <i>summoned</i> it.</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">You guys! I didn't think you still hung out here. None of you have met my littlest ones. This is little Jacob Alphonse Rabinowitz III. And this one is Bill.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">"Bill"?</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">Yeah, we kinda ran out of steam. (To Ross) It's because you weren't there to name your own son.</dd>
+</dl>
+
+<p class="action">braying laughter</p>
+
+<dl>
+<dt class="character">ROSS (UNAMUSED)</dt>
+<dd class="dialogue">Yeah, you made that joke last time.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">It's so good to see you, Janice. What brings you to the city?</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">Well we wanted to visit daddy in his new office but I don't go below 15th.</dd>
+</dl>
+
+<p class="action">She flirtingly taps Chandler's arm.</p>
+
+<dl>
+<dt class="character">JANICE (CONT'D)</dt>
+<dd class="dialogue">I've become a fancy lady since we split, Chandler. I don't go east of Madison, either.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Strictly a Harlem girl, then?</dd>
+</dl>
+
+<p class="action">braying laughter</p>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">You guys all look so good - i haven't seen you in forever.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">And yet, somehow, I hear your voice every day.</dd>
+</dl>
+
+<p class="action">braying laughter</p>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">Chandler, I always knew Monica couldn't please you like I can. No offense, Monica.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA (CRINKLING HER NOSE)</dt>
+<dd class="dialogue">Well...</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">So Janice, it's great to see you but we're kind of all looking for Phoebe. Have you maybe seen her?</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE</dt>
+<dd class="dialogue">I haven't, sweetie, I'm sorry. But if I see her I'll tell her.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Thanks, Janice.</dd>
+</dl>
+
+<p class="action">Janice notices Bill offscreen.</p>
+
+<dl>
+<dt class="character">JANICE (TO THE GROUP)</dt>
+<dd class="dialogue">Excuse me. Bill, honey - that's Gunther. We don't kick him.</dd>
+</dl>
+
+<p class="action">Janice hurries away.</p>
+
+<h5 class="goldman-slugline">GUITAR WIPE TO</h5>
+<h5 class="goldman-slugline">Rachel is talking quietly to Monica amidst the oblivious group</h5>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">I'm just telling you what I saw.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">But you didn't see anything - you saw the back of a person who could be anybody. Phoebe probably owns wigs.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">She does. But listen, whoever it is had Mike's...you know, attention. It had better be Phoebs.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">There must be some explanation.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">I know, I know.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Because otherwise Phoebe is going to be so upset.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">I know, I know.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">...When I stuff Mike's mouth full of his own beautiful hair and he gags to death on it.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Oh!</dd>
+</dl>
+
+<p class="action">Ross enters.</p>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">What are you guys whispering about?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL (SHEEPISHLY)</dt>
+<dd class="dialogue">Well...</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Rach, no! This is gossip. Mon, did she tell you?</dd>
+</dl>
+
+<p class="action">Monica looks away guiltily.</p>
+
+<dl>
+<dt class="character">ROSS (TO RACHEL)</dt>
+<dd class="dialogue">Don't you - don't you remember your New Years resolution?</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">From six years ago? No. Plus...ya know...it's not gossip if it's true.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">I don't think that checks out scientifically.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Ugh, we don't have time for this dinosaur crap - we need to find Phoebe.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">I know but listen - and this means you, too, Mon - we have to stay calm about this. There are plenty of explanations for it.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Oh? Name one.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Yeah, Ross, name one thing that could possibly explain Mike's hand...'s sluttiness.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Well, I didn't wanna say it but...maybe they're, you know, (almost mumbling now) on a break.</dd>
+</dl>
+
+<p class="action">A hush falls over the room - all look to Rachel.</p>
+
+<dl>
+<dt class="character">RACHEL (CLEARING HER THROAT)</dt>
+<dd class="dialogue">You know, I bet that's not it.</dd>
+</dl>
+
+<p class="action">Ross' phone rings - he hesitates to answer, appearing to look to Rachel for guidance.</p>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Oh, just answer it.</dd>
+</dl>
+
+<p class="action">Ross answers the phone.</p>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Monica, it's dad. Hello? Hello?</dd>
+</dl>
+
+<p class="action">He shrugs and pockets the phone. Monica's phone rings.</p>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">He's calling me, too! Hello? Dad? Hello? What?! Dad, I can't understand you. Dad? Dad?!</dd>
+</dl>
+
+<p class="action">Monica lowers the phone, visibly worried.</p>
+
+<dl>
+<dt class="character">MONICA (CONT'D)</dt>
+<dd class="dialogue">Oh my god - he said he had no way out. I don't know what that means.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">What? No way out of where?</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">I don't know!</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Call him ba&#8209;&#8209;</dd>
+</dl>
+
+<p class="action">Joey sprints out of the room, wordlessly.</p>
+
+<dl>
+<dt class="character">ROSS (CONT'D)</dt>
+<dd class="dialogue">What was th&#8209;&#8209; What is happening?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Oh, who cares. Mon, your dad's just stuck in traffic.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Why would he call about that?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Same reason he called when found all those Hogan's Heroes DVDs on the sidewalk. Who cares? We have real problems to solve.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Yes, like who’s that guy?</dd>
+</dl>
+
+<p class="action">Chandler points out that Jim Nelson has joined the group on the couch. Nobody in the group can place him.</p>
+
+<dl>
+<dt class="character">GROUP (OFFSET CHATTER)</dt>
+<dd class="dialogue">Oh, hey! It's...you! etc.</dd>
+</dl>
+
+<dl>
+<dt class="character">JIM</dt>
+<dd class="dialogue">You guys don’t remember me, do you? It’s me, James!</dd>
+</dl>
+
+<p class="action">Several characters can be seen sneaking peeks at previously-hidden sides.</p>
+
+<dl>
+<dt class="character">MONICA (BOISTEROUSLY)</dt>
+<dd class="dialogue">James! (then quietly, aside) It's "Jim," I think.</dd>
+</dl>
+
+<dl>
+<dt class="character">JIM</dt>
+<dd class="dialogue">My imdb says "James."</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER</dt>
+<dd class="dialogue">Bop-bop-bop-bop, hold up there, friend. We're kind of doing this right now.</dd>
+</dl>
+
+<dl>
+<dt class="character">JIM</dt>
+<dd class="dialogue">Oh! Oh, I'm so sorry. I saw, uh, Joey run outta here so I thought...you know...</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA (RESETTING)</dt>
+<dd class="dialogue">So, Jim. I think your thing was Phoebe?</dd>
+</dl>
+
+<dl>
+<dt class="character">JIM</dt>
+<dd class="dialogue">Yeah, that's right! So you do remember. Hey, is she around? I'd love to see her.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">We would too. We've kind of all been looking for her.</dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS (SKEPTICALLY)</dt>
+<dd class="dialogue">...in <i>here</i>.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">What?! You fucked Janice, Ross! And, and, and Mona and the copy store girl and, and, and your students and Rebecca Stamos and that baby store slut and black women and bald women and it's just not fucking fair I can't even have one male work colleague?!!</dd>
+</dl>
+
+<p class="action">Long pause. Pref an errant .CUT and .RETURN</p>
+
+<dl>
+<dt class="character">ROSS (UTTERLY CONFUSED)</dt>
+<dd class="dialogue">Jen?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Cut.</dd>
+</dl>
+
+<dl>
+<dt class="character">JIM</dt>
+<dd class="dialogue">Wait, so we are or are not doing this?</dd>
+</dl>
+
+<p class="action">Ross surveys the room for assistance.</p>
+
+<dl>
+<dt class="character">ROSS (QUIETLY TO RACHEL)</dt>
+<dd class="dialogue">Jen, do we need to stop?</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE (O.S.)</dt>
+<dd class="dialogue">Oh. My. God.</dd>
+</dl>
+
+<dl>
+<dt class="character">GROUP (IN OFFSET, ANNOYED UNISON)</dt>
+<dd class="dialogue">Not now, Janice!/Janice!/C'mon!</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER (TO MONICA)</dt>
+<dd class="dialogue">What is happening?</dd>
+</dl>
+
+<p class="action">Monica barely responds.</p>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">Can I get anyone another coffee?</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL (EXPLODING)</dt>
+<dd class="dialogue">Jim, not now! What the fuck?!</dd>
+</dl>
+
+<p class="action">Schwimmer looks around to the group for confirmation of what he just heard.</p>
+
+<dl>
+<dt class="character">GUNTHER</dt>
+<dd class="dialogue">I don't know, I feel weird and just thought &#8209;&#8209;</dd>
+</dl>
+
+<p class="action">Phoebe enters.</p>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">Phoebe! Oh, thank god. Look everyone, it's Phoebe!! ...Buffay!</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL (COMPOSING HERSELF)</dt>
+<dd class="dialogue">Oh, Phoebe, honey. We've been looking all over for you.</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER (NERVOUSLY)</dt>
+<dd class="dialogue">All over <i>everywhere.</i></dd>
+</dl>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Uh, in Rachel's defense she and I did start way down the street.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">Yeah, Chandler, you smug fuck. Blocks away.</dd>
+</dl>
+
+<p class="action">Chandler is hurt and confused, breaks the fourth wall.</p>
+
+<dl>
+<dt class="character">RACHEL (CONT'D)</dt>
+<dd class="dialogue">Anyway - Phoebs we have to talk.</dd>
+</dl>
+
+<dl>
+<dt class="character">PHOEBE (FLATLY)</dt>
+<dd class="dialogue">No we don't. I just saw them jumping.</dd>
+</dl>
+
+<dl>
+<dt class="character">MONICA</dt>
+<dd class="dialogue">What? Jumping? Who?</dd>
+</dl>
+
+<dl>
+<dt class="character">CHANDLER (TRYING TO RESTORE)</dt>
+<dd class="dialogue">She must mean...uh, my beans. Or, or...my jacks?</dd>
+</dl>
+
+<p class="action">Neither he nor anybody else likes the joke.</p>
+
+<dl>
+<dt class="character">PHOEBE</dt>
+<dd class="dialogue">I saw people jumping.</dd>
+</dl>
+
+<dl>
+<dt class="character">RACHEL</dt>
+<dd class="dialogue">No, Phoebe, hon - we have to talk about Mike.</dd>
+</dl>
+
+<dl>
+<dt class="character">PHOEBE</dt>
+<dd class="dialogue">No. No we don't. There's nothing to say. They're jumping. It's jump or burn alive, Rachel, so they're leaping into the air. As we speak. They're <i>flying.</i></dd>
+</dl>
+
+<p class="action">The room goes silent as friends share shrugs and confusion.</p>
+
+<dl>
+<dt class="character">ROSS</dt>
+<dd class="dialogue">Phoebe?</dd>
+</dl>
+
+<p class="action">Phoebe buries her head in her hands and weeps.</p>
+
+<dl>
+<dt class="character">ROSS (CONT'D)</dt>
+<dd class="dialogue">I don't understand what's happening.</dd>
+</dl>
+
+<dl>
+<dt class="character">JANICE (O.S., BUT QUIETLY, SERIOUSLY)</dt>
+<dd class="dialogue">Oh my god.</dd>
+</dl>
+
+<h5 class="goldman-slugline">CUT TO Janice watching a television with live coverage of the second tower hit.</h5>
+
+<h5 class="goldman-slugline">BLUES GUITAR WIPE TO:</h5>
+<p class="action">EXT - CENTRAL PERK - MORNING - STREETS ARE EMPTY</p>
+<p class="comment">ACT II</p>
+
+<p class="action">Possible to dos: Joey becomes a Jingo; Elliott Gould and Christina Pickles perish in each others' arms (how to know?); Jim returns and is easily discovered lying about his presence in Tower 2; Chandler &#38; Monica argue about being too quick to assign blame; Ross argues with a stranger about the appropriate military response, if any; Mike is dead, brunette mystery goes to grave therewith; Phoebe tries to join the Marines; Cheerful Parker (A. Baldwin) returns, the intensity of his cheerfulness inverted into an anti-Muslim vitriol</p>
+
+</div><!-- end screenplay -->
+</body>
+</html>
