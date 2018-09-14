@@ -1,0 +1,491 @@
+{
+   "type": "post",
+   "date": "1985-05-25T15:20:15+09:00",
+   "description": "",
+   "slug": "birth-death-love-and-rice",
+   "tags": [],
+   "title": "Birth, Death, Love and Rice (Cheers #271)"
+}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>A Screenplay</title>
+<meta name="generator" content="Textplay">
+<style type="text/css" media="all">
+
+/* ---------- PAGE STYLES ---------- */
+
+/* all page margins are maximums */
+@page {
+size: 8.5in 11in;
+margin-top:1in;
+margin-right:1in;
+margin-bottom:.5in;
+margin-left:1.5in;
+}
+/* This makes the page-counter start on the first page of the screenplay */
+div#screenplay {
+counter-reset: page 1;
+page: Screenplay;
+prince-page-group: start;
+}
+@page Screenplay {
+/* Page Numbers */
+@top-right-corner {
+font: 12pt "Courier Prime", courier, monospace;
+content: counter(page)".";
+vertical-align: bottom;
+padding-bottom: 1em;
+}
+/* Define Header */
+@top-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align: bottom;
+padding-bottom: 1.3em;
+}
+/* Define Footer */
+@bottom-left {
+content: "";
+font: italic 10pt Georgia;
+color: #888;
+vertical-align:top;
+padding-top:0;
+}
+}
+/* removes the header and page-numbers from the first page */
+@page Screenplay:first {
+@top-right-corner { content: normal; }
+@top-left { content: normal; }
+}
+/* These control where page-breaks can and cannot happen */
+p {
+orphans: 2;
+widows: 2;
+}
+dl {
+page-break-inside:avoid;
+}
+dt, h2, h5 {
+page-break-after: avoid;
+}
+dd.parenthetical {
+orphans: 3;
+widows: 3;
+page-break-before: avoid;
+page-break-after: avoid;
+}
+dd {
+page-break-before:avoid;
+}
+div.page-break {
+page-break-after:always;
+}
+h3 {
+page-break-before: avoid;
+}
+/* by default Prince bookmarks all headings, no thanks */
+h3, h4, h5, h6 {
+prince-bookmark-level: none;
+}
+
+/* ---------- COMMON LAYOUT ---------- */
+
+:lang(jp) {
+font-family: osaka;
+}
+
+body {
+font-family: "Courier Prime", courier, monospace;
+font-size: 12pt;
+line-height: 1;
+}
+#screenplay {
+width: 6in;
+margin:0 auto;
+}
+p.center {
+text-align:center;
+margin-left:0;
+width:100%;
+}
+p {
+margin-top:12pt;
+margin-bottom:12pt;
+margin-left:0;
+padding-right:.25in;
+width:6in;
+white-space: pre-wrap;
+}
+
+/*Character Names*/
+
+dt {
+font-weight:normal;
+margin-top:1em;
+margin-left:2in;
+padding-right:.25in;
+width:4in;
+}
+
+/*Parentheticals*/
+
+dd.parenthetical {
+margin-left:1.6in;
+text-indent:-.12in;
+width: 2in;
+padding-right:2.66in;
+}
+
+/*Dialogue*/
+
+dd {
+margin:0;
+margin-left: 1in;
+width: 3.5in;
+padding-right:1.75in;
+line-height: inherit;
+white-space: pre-wrap;
+}
+
+/* Dual-Dialogue-blocks */
+
+div.dialogue_wrapper {
+overflow:auto;
+width:100%;
+}
+
+dl.dual {
+width:2.9in;
+}
+
+dl.dual dt, dl.dual dd {
+margin-left:0;
+width:2.5in;
+padding-right:.25in;
+}
+
+dl.dual.first {
+float:left;
+margin-top:-12pt;
+}
+
+dl.dual.second {
+margin-right:0;
+margin-left:auto;
+}
+
+dl.dual dt {
+text-align:center;
+}
+
+dl.dual dd.parenthetical {
+width:2.1in;
+margin-left:.32in;
+}
+
+/* Lyrics */
+span.lyric {
+font-style: italic;
+}
+
+span.lyric i {
+font-style: normal;
+}
+
+
+/* Sluglines and Transitions */
+
+h1,h2,h3,h4,h5,h6 {
+font-weight: normal;
+font-size: 12pt;
+margin-top: 1em;
+margin-bottom: 1em;
+padding-right:.25in;
+text-transform:uppercase;
+}
+
+/* Full Sluglines */
+
+h2 {
+width: inherit;
+margin-top: 1em;
+margin-bottom: 12pt;
+margin-left: 0;
+text-decoration: none;
+font-weight: bold;
+}
+
+/* Right Transitions */
+
+h3 {
+margin-left: 4in;
+width: 2in;
+}
+
+/* Left Transitions */
+
+h4 {
+
+}
+
+/* Goldman Sluglines */
+
+h5 {
+margin-top: 1em;
+font-weight: bold;
+text-decoration: none;
+}
+
+span.underline {
+text-decoration:underline;
+}
+.comment {
+display:none
+}
+
+.revised { background:rgba(255, 255, 0, 0.2); }
+
+</style>
+</head>
+<body>
+
+<div id="screenplay">
+<p class="action"><b><u>CHARACTERS</u></b>
+FRASIER: stuffy, pompous, sullen
+SAM: TALL, HANDSOME, GIANT GLOBE OF LUSH HAIR UP TOP</p>
+
+
+<h2 class="full-slugline">INT. THE BACK OFFICE OF A BOSTON TAVERN - DAY</h2>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Hello, Sam, old buddy.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Frasier.
+What the hell are you doing here? - Are you alone?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Yes, I'm alone.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER (CONT'D)</dt>
+<dd class="dialogue">I didn't marry Diane.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">You didn't?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">No, I didn't. Does that make you happy?</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Well, I'm happy for you. Just how'd you manage that?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Well, she left me at the altar. I had just vowed to take her for my wife. The priest asked her if she would marry me. She looked around and asked if he was talking to her. He nodded, and she was gone.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Gee, Fras, that's tough. She just took off, huh? No explanation or anything?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Well, there was no explanation necessary. It was you she loved all along. And it was the thought of you that made me lose her. The story of my humiliation spread like wildfire through the university and then to the entire Italian countryside. Everyone knew about it. Everyone knew about my shame.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Nah, you must have been imagining that.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Oh, was l? Do you know that in soccer, when a player kicks at the ball, misses and falls down, it's now called a "Frasier"?</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">That could be a coincidence.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">If he's knocked cold, it's called a "Frasier Crane." I've lost everything, Malone. My tenure, my practice and my Diane. My life is ruined, and it's all your fault. Now, don't you think someone should pay for that?</dd>
+</dl>
+
+<p class="action">(Frasier trains a .38 on Sam)</p>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">If by "someone," you mean someone in this room, I can I can honestly answer no, I don't.</dd>
+</dl>
+
+<h5 class="goldman-slugline">(FRASIER APPROACHES)</h5>
+
+<dl>
+<dt class="character">SAM (CONT'D)</dt>
+<dd class="dialogue">Oh, come on. Oh, wait a se&#8209;&#8209; What are you doing? The gun's not even loaded.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Certainly it's loaded.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">No, it isn't.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Of course you know it's not, because Frasier Crane is a harmless person. He never caused you a moment's concern, not a moment's worry. He was never a threat to your relationship with Diane, and he's not a threat now. Is that it, Sam?</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">No, it's just that the little holes there are empty.</dd>
+</dl>
+
+<p class="action">(Frasier examines his weapon)</p>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Once again, you're ahead of me, Sam. I just hoped to see you quaking in your boots a little bit or something, but you've cheated me even of that.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Boy. Boy, you're really bent out of shape over this, aren't you? Just out of totally idle curiosity, whatever did happen to Diane?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Well, I was recently informed by my mentor, Dr. Bennett Ludlow &#8209;&#8209; whose care I'm now under, incidentally.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">And believe me, he's doing a heck of a job.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">He told me that she's at St. Anselm's Abbey - an hour outside of Boston, with the Sisters of the Divine Severity.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Oh, whoa, whoa, wait. You can't be a nun if you've already&#8209;&#8209;</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Oh, she's not becoming a nun, you idiot! She's working there.
+She's cleaning, serving meals, wearing sackcloth - that sort of thing.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">I'll be damned.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">You see, after she left me, Diane embarked upon a spree of decadence in Italy. I'd hear stories about dancing on tables in cafés, swimming in public fountains, cavorting with counts and soccer players. Well, now she's doing penance for la dolcé vita. She's seeking peace. I hope she's found it.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Diane, dancing on tabletops? You mean my&#8209;&#8209;? Your&#8209;&#8209;? Our&#8209;&#8209;? The Diane?</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Yes, all of them. But now listen, Sam, - you won't go and see her will you?</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">No!</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">I mean, it would be disaster for everyone.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">No, no. Believe me, I wouldn't do that. No, I'm over her. You know, and if you know what's good for you, I think you should forget about her too.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Oh, I'll forget about her. I'll forget about her when the moon turns to ashes and the birds sing nevermore.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">There you go.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">Well, I'm sorry about the histrionics, Sam.</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">Oh, no, don't.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">You know, it's funny, even through all this, I still think of you as my goombah.</dd>
+</dl>
+
+<p class="action">Well, it's best that I get going.
+But let's do the lunch thing sometime.</p>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">I'd like that. Yeah. Take care.</dd>
+</dl>
+
+<dl>
+<dt class="character">FRASIER</dt>
+<dd class="dialogue">You won't go see her?</dd>
+</dl>
+
+<dl>
+<dt class="character">SAM</dt>
+<dd class="dialogue">No way. No.</dd>
+</dl>
+
+<h5 class="goldman-slugline">(FRASIER EXIT)</h5>
+
+<h5 class="goldman-slugline">FIN</h5>
+
+</div><!-- end screenplay -->
+</body>
+</html>

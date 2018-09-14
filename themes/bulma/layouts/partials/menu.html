@@ -1,12 +1,14 @@
 <nav class="navbar is-transparent">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{.Site.BaseURL | relURL}}">
-      {{.Site.Params.Title}}
-    </a>
+          {{.Site.Params.Title}}
+        </a>
 
     {{ range .Site.RegularPages }}
 
-    {{ if eq .Type "structure" }}<span style="background-color:blue;color:white;">{{ .Title }}</span>{{end}}
+    {{ if eq .Type "structure" }}
+    <a class="navbar-item" href="#">{{ .Title }}
+    </a>{{end}}
 
     {{ end }}
 
