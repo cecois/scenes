@@ -3,26 +3,53 @@
 
 {{ define "main" }}
 
-<div id="container">
-     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
-     {{ range $paginator.Pages }}
-   <article class="post">
-    <header>
-     <h2>
-      <a href="{{ .Permalink }}">
-        {{ .Title }}
+<div id="container" class="">
+  {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+
+  {{ range $index, $element := $paginator.Pages}}
+
+  <div class="section"><div class="container columns">
+    {{if (and (ge $index 0) (lt $index 4)) }}
+    <article class="post column">
+      <header>
+       <h2>
+        <a href="{{ .Permalink }}">
+          {{ .Title }}
         </a>
-       </h2>
+      </h2>
       <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">
        <span class="day">{{ .Date.Format "02" }}</span>
        <span class="month">{{ .Date.Format "Jan" }}</span>
        <span class="year">{{ .Date.Format "2006" }}</span>
 
-      </time>
-      </header>
-     </article>
-     {{ end }}
-    </div>
+     </time>
+   </header>
+ </article>
+ {{end}} <!-- if -->
+</div></div>
+
+<div class="section"><div class="container columns">
+  {{if (and (ge $index 5) (lt $index 10)) }}
+  <article class="post column">
+    <header>
+     <h2>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+      </a>
+    </h2>
+    <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">
+     <span class="day">{{ .Date.Format "02" }}</span>
+     <span class="month">{{ .Date.Format "Jan" }}</span>
+     <span class="year">{{ .Date.Format "2006" }}</span>
+
+   </time>
+ </header>
+</article>
+{{end}} <!-- if -->
+</div></div>
+
+{{end}} <!-- range -->
+</div><!-- #container -->
 
 {{ end }}
 
