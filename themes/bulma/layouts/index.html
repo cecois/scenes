@@ -3,27 +3,26 @@
 
 {{ define "main" }}
 
-<section class="hero is-fullheight">
+<div id="container">
+     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+     {{ range $paginator.Pages }}
+   <article class="post">
+    <header>
+     <h2>
+      <a href="{{ .Permalink }}">
+        {{ .Title }}
+        </a>
+       </h2>
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z" }}">
+       <span class="day">{{ .Date.Format "02" }}</span>
+       <span class="month">{{ .Date.Format "Jan" }}</span>
+       <span class="year">{{ .Date.Format "2006" }}</span>
 
-
-<!--     <div class="hero-body">
-      <div class="container has-text-centered">
-        <div class="columns is-vcentered"> -->
-        <ul class="is-vcentered">
-
-          {{ range .Paginator.Pages }}
-          {{ if eq .Type "post" }}
-          <li class="is-multiline">
-            {{ partial "page-summary" . }}
-
-          </li>
-          {{ end }}
-          {{ end }}
-</ul>
-<!-- 
-          </div>
-        </div>
-      </div> -->
+      </time>
+      </header>
+     </article>
+     {{ end }}
+    </div>
 
 {{ end }}
 
