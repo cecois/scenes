@@ -3,28 +3,110 @@
 
 {{ define "main" }}
 
-<div id="container">
+<div id="container" style="padding:5%;margin-top:12vh">
 
 
+  {{$colclasses:="column card is-one-quarter has-text-centered is-size-7"}}
 
-
-  {{ range .Data.Pages where (lt index 3) }}
+  {{$lower:=0}}
+  {{$upper:=3}}
   <div class="columns">
-    <div class="column is-one-third">
-      <header>
-       <h2>
+    {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
+
+    {{ if le $index $upper }}
+    <div class="{{$colclasses}}" style="height:100%;">
+      <h2>
         <a href="{{ .Permalink }}">
-          {{ .Title  }}
+          {{.Title}}
         </a>
       </h2>
-    </header>
+    </div><!-- /.column -->
+    {{end}} <!-- if -->
+    {{end}} <!-- range -->
+  </div><!-- /.columns -->
 
-  </div><!-- /.column -->
-</div><!-- /.columns -->
+
+  {{$lower:=3}}
+  {{$upper:=7}}
+  <div class="columns">
+    {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
+
+    {{ if le $index $upper }}
+    {{ if gt $index $lower }}
+    <div class="{{$colclasses}}">
+      <h2>
+        <a href="{{ .Permalink }}">
+          {{.Title}}
+        </a>
+      </h2>
+    </div><!-- /.column -->
+    {{end}} <!-- if -->
+    {{end}} <!-- if -->
+    {{end}} <!-- range -->
+  </div><!-- /.columns -->
+
+
+  {{$lower:=7}}
+  {{$upper:=11}}
+  <div class="columns">
+    {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
+
+    {{ if le $index $upper }}
+    {{ if gt $index $lower }}
+    <div class="{{$colclasses}}">
+      <h2>
+        <a href="{{ .Permalink }}">
+          {{.Title}}
+        </a>
+      </h2>
+    </div><!-- /.column -->
+    {{end}} <!-- if -->
+    {{end}} <!-- if -->
+    {{end}} <!-- range -->
+  </div><!-- /.columns -->
+
+
+  {{$lower:=11}}
+  {{$upper:=15}}
+  <div class="columns">
+    {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
+
+    {{ if le $index $upper }}
+    {{ if gt $index $lower }}
+    <div class="{{$colclasses}}">
+      <h2>
+        <a href="{{ .Permalink }}">
+          {{.Title}}
+        </a>
+      </h2>
+    </div><!-- /.column -->
+    {{end}} <!-- if -->
+    {{end}} <!-- if -->
+    {{end}} <!-- range -->
+  </div><!-- /.columns -->
+
+
+  {{$lower:=15}}
+  {{$upper:=19}}
+  <div class="columns">
+    {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
+
+    {{ if le $index $upper }}
+    {{ if gt $index $lower }}
+    <div class="{{$colclasses}}">
+      <h2>
+        <a href="{{ .Permalink }}">
+          {{.Title}}
+        </a>
+      </h2>
+    </div><!-- /.column -->
+    {{end}} <!-- if -->
+    {{end}} <!-- if -->
+    {{end}} <!-- range -->
+  </div><!-- /.columns -->
 
 
 
-{{end}} <!-- range -->
 </div><!-- #container -->
 
 {{ end }}
