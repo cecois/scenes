@@ -3,10 +3,10 @@
 
 {{ define "main" }}
 
-<div id="container" style="padding:5%;margin-top:12vh">
+<div id="container">
 
 
-  {{$colclasses:="column card is-one-quarter has-text-centered is-size-7"}}
+  {{$colclasses:="column card is-one-quarter has-text-centered is-size-5"}}
 
   {{$lower:=0}}
   {{$upper:=3}}
@@ -14,12 +14,13 @@
     {{ range $index, $element := first 99 (where .Site.Pages "Type" "post") }}
 
     {{ if le $index $upper }}
-    <div class="{{$colclasses}}" style="height:100%;">
+    <div class="{{$colclasses}}" >
       <h2>
         <a href="{{ .Permalink }}">
           {{.Title}}
         </a>
       </h2>
+      {{ partial "post/meta" . }}
     </div><!-- /.column -->
     {{end}} <!-- if -->
     {{end}} <!-- range -->
@@ -39,6 +40,7 @@
           {{.Title}}
         </a>
       </h2>
+      {{ partial "post/meta" . }}
     </div><!-- /.column -->
     {{end}} <!-- if -->
     {{end}} <!-- if -->
@@ -59,6 +61,7 @@
           {{.Title}}
         </a>
       </h2>
+      {{ partial "post/meta" . }}
     </div><!-- /.column -->
     {{end}} <!-- if -->
     {{end}} <!-- if -->
@@ -79,6 +82,7 @@
           {{.Title}}
         </a>
       </h2>
+      {{ partial "post/meta" . }}
     </div><!-- /.column -->
     {{end}} <!-- if -->
     {{end}} <!-- if -->
