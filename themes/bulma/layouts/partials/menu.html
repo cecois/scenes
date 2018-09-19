@@ -4,11 +4,11 @@
           {{.Site.Params.Title}}
         </a>
 
-    {{ range .Site.RegularPages }}
+     {{ range $element := first 99 (where .Site.Pages "Type" "structure") }}
 
-    {{ if eq .Type "structure" }}
-    <a class="navbar-item" href="#">{{ .Title }}
-    </a>{{end}}
+    <a class="navbar-item" href="{{.Permalink}}">{{ .Title }}
+
+    </a>
 
     {{ end }}
 

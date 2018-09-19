@@ -5,7 +5,7 @@
    "description": "",
    "slug": "about",
    "tags": [],
-   "title": "about"
+   "title": "About"
 }
 
 # And then the rest?
