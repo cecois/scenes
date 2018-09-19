@@ -8,6 +8,8 @@
    "title": "About"
 }
 
-# And then the rest?
-* The rest 1
-* The rest 2
+# Scenes
+
+These dialogues are largely\* fictional transactions between largely real people who, for one reason or another, seem interesting and whom, to one degree or another, are likely to have participated as such.
+
+\* At least one piece is presented here *verbatim* (and uncredited for effect) from a primary source.
