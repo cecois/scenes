@@ -5,6 +5,7 @@ DB_HTML_RAW=$(cat .env.json | jq -r '.DB_HTML_RAW')
 DB_FM_RAW=$(cat .env.json | jq -r '.DB_FM_RAW')
 DB_HTML=$(cat .env.json | jq -r '.DB_HTML')
 
+rm ${DB_HTML}*.html
 for F in $(ls ${DB_FOUNTAINS}*.fountain);
 do
 	echo "processing $F..."
